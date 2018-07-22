@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rightsidemenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/green_350"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_lock_parent"
+        style="@style/width_match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingRight="@dimen/_2sdp"
+        android:paddingLeft="@dimen/_2sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:background="@drawable/grey_curve"
+        android:orientation="horizontal">
+
+
+
+        <FrameLayout
+            android:id="@+id/layout_lock"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:background="@drawable/ovel_stroke"
+            android:gravity="center">
+
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/img_lock"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_1sdp"
+            android:layout_gravity="center"
+            android:src="@mipmap/locked" />
+
+        <TextView
+            android:id="@+id/txt_door_status"
+            style="@style/width_match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/layout_lock"
+            android:layout_toLeftOf="@+id/img_unlock"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp"
+            android:text="Locked"
+            android:textSize="@dimen/_11sdp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black_60" />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/img_unlock"
+            android:layout_width="@dimen/_36sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/_8sdp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_1sdp"
+            android:src="@mipmap/unlock" />
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ToggleBackgroundAnimation</string>
+    <string name="unlock">Unlock</string>
+    <string name="locked">Locked</string>
+</resources>
